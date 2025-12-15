@@ -90,7 +90,7 @@ input[type="text"]:focus {
 
 .card:hover { 
     transform: scale(1.05); 
-    box-shadow: 0 4px 14px rgba(0,0,0,.6);
+    box-shadow: 0 4px 14px rgba(114, 80, 5, 0.6);
 }
 
 .card img { 
@@ -104,7 +104,11 @@ input[type="text"]:focus {
     color: #5d3900;
     
 }
-
+.card a {
+    color: rgb(255, 238, 207);
+    font-weight: bold;
+    text-transform: uppercase;
+}
 .btn { 
     background: #5d3900; 
     padding: 12px 18px; 
@@ -120,7 +124,7 @@ input[type="text"]:focus {
 }
 
 .btn:hover { 
-    background: #a06a0e;
+    background-color: #a06a0e;
 }
 footer{
     background-color: #e0ad55;
