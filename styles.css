@@ -1,0 +1,234 @@
+body { 
+    margin: 0; 
+    font-family: system-ui, sans-serif; 
+    background-color: #ffc258; 
+}
+
+.logo_camera {
+    width: 4vw;
+
+}
+
+img {
+    width: 15vw;
+}
+
+header { 
+    background-color: #e0ad55; 
+    padding: 14px 50px; 
+    display: flex; 
+    justify-content:space-between ; 
+    align-items: center;
+    border-bottom: 1px solid #cd983e;
+}
+
+header h1 {
+    display: inline;
+    margin: 0;
+    font-size: 3vw;
+    color: #f3f3f8;
+    
+}
+
+nav a { 
+    margin-left: 14px; 
+    text-decoration: none; 
+    color: #f7f6f4; 
+    font-size: 1.6vw;
+    transition: .2s;
+    font-weight: bold;
+}
+header a{
+    text-decoration: none;
+}
+nav a:hover {
+    color: #5d3900;
+}
+
+main { 
+    max-width: 1400px; 
+    margin: auto; 
+    padding: 20px; 
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    background: #e0c59d(39, 40, 40);
+    border: 1px solid #e0c59d;
+    color: #5d3900;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+input[type="text"]:focus {
+    border-color: #5d3900;
+    outline: none;
+}
+
+.titre{
+    text-align: center;
+    font-size: 230%;
+    margin: 35px auto;
+    color: #5d3900;
+}
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(5 , 1fr); 
+    gap: 24px; 
+}
+
+.card { 
+    background-color: #e0ad55; 
+    border-radius: 6px; 
+    padding: 8px; 
+    box-shadow: 3px 2px 8px rgb(190, 125, 26); 
+    transition: transform .25s, box-shadow .25s;
+    text-align: center;
+}
+
+.card:hover { 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 14px rgba(114, 80, 5, 0.6);
+}
+
+.card img { 
+    width: 100%;  
+    border-radius: 8px; 
+}
+
+.card h3 , h4 {
+    font-size: 103%;
+    margin-top: 10px;
+    color: #5d3900;
+    
+}
+.card a {
+    color: rgb(255, 238, 207);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btn { 
+    background: #5d3900; 
+    padding: 12px 18px; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    font-size: 15px;
+    display: block;
+    margin: 50px auto;
+    transition: .2s;
+    width: 20%;
+}
+
+.btn:hover { 
+    background-color: #a06a0e;
+}
+footer{
+    background-color: #e0ad55;
+    text-align: center;
+    padding: 10px ;
+}
+
+#movieDetails{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+
+}
+#affiche img{
+    width: 85%;
+    
+}
+#affiche{
+    text-align: center;
+    border: 2px solid #f8f6f3;
+    border-radius: 25px;
+    
+}
+#affiche h1{
+    text-transform: uppercase;
+    color:#815103 ;
+    text-shadow: 2px 2px 3px #c98539;
+}
+#description{
+    border: 2px solid #f3f3f8;
+    padding: 10px 25px;
+    border-radius: 25px;
+    
+}
+#description p {
+    font-size: 110%;
+    margin :40px 0;
+}
+p span{
+    font-weight: bold;
+    color: #815103;
+    font-size: 150%;
+}
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 5px 10px;
+    }
+
+    .logo_camera {
+        width: 45px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .titre {
+        font-size: 180%;
+        margin: 20px auto;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .btn {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    #movieDetails {
+        grid-template-columns: 1fr;
+    }
+
+    #affiche img {
+        width: 70%;
+    }
+
+    #description p {
+        font-size: 100%;
+        margin: 20px 0;
+    }
+
+    p span {
+        font-size: 120%;
+    }
+}
