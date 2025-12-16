@@ -168,3 +168,71 @@ p span{
     color: #815103;
     font-size: 150%;
 }
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 5px 10px;
+    }
+
+    .logo_camera {
+        width: 45px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .titre {
+        font-size: 180%;
+        margin: 20px auto;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .btn {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    #movieDetails {
+        grid-template-columns: 1fr;
+    }
+
+    #affiche img {
+        width: 70%;
+    }
+
+    #description p {
+        font-size: 100%;
+        margin: 20px 0;
+    }
+
+    p span {
+        font-size: 120%;
+    }
+}
