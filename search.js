@@ -14,7 +14,6 @@ input.addEventListener("input", () => {
         searchMovies();
     }
 });
-
 function searchMovies() {
     fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${currentSearch}&page=${page}`)
         .then(res => res.json())

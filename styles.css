@@ -168,10 +168,6 @@ p span{
     color: #815103;
     font-size: 150%;
 }
-
-/* =========================
-   MOBILE
-========================= */
 @media (max-width: 768px) {
 
     header {
